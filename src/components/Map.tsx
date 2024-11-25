@@ -116,7 +116,7 @@ const MapComponent = () => {
             view: new View({
                 projection: krovak.code,
                 center: [-749992.3, -1045788.0],
-                zoom: 10,
+                zoom: 16.5,
             }),
             overlays: [tooltipRef.current as Overlay]
         });
