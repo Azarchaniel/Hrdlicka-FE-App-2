@@ -48,7 +48,6 @@ const getFillColor = (value: any) => {
     }
 };
 
-// Funkce pro dynamický styl
 const getFeatureStyle = (feature: any) => {
     const value = feature.get('hodnota'); // get value by identificator "hodnota"
     return new Style({
@@ -117,7 +116,7 @@ const MapComponent = () => {
             view: new View({
                 projection: krovak.code,
                 center: [-749992.3, -1045788.0],
-                zoom: 16,
+                zoom: 16.5,
             }),
             overlays: [tooltipRef.current as Overlay]
         });
